@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Write and run your HTML, CSS and JS code in real-time seamlessly with our online compiler ">
+        <!-- Open Graph Meta Tags for Social Media Sharing -->
+        <meta property="og:title" content="WebDev Complier">
+        <meta property="og:description" content="Create and test your HTML, CSS, and JavaScript code in real-time.">
+        <meta property="og:image" content="../static/icons/logo.png">
+        <meta property="og:url" content="https://WebDev-Complier.netlify.app">
+        <title>WebDev Complier</title>
+        <!--Logo-->
+        <link rel="icon" type="icon/png" href="../static/icons/logo.png">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="../static/style/fontawesome-free-6.4.0-web/css/all.css">
+        <!--Others-->
+        <link rel="stylesheet" href="../static/style/style.css">
+    </head>
+    <body>
+        <!--Loader-->
+        <div class="loader"></div>
+        <!--Hero-Section-->
+        <div class="toHome">
+            <div class="logo">
+                <img src="../static/icons/logo.ico">
+                <span class="logoName">WEBDEV Complier</span>
+            </div>    
+        </div>
+        <section id="container">
+            <div id="codearea">
+                <div class="htmlcode codecontainer">
+                    <div class="codetop">
+                        <div class="logoname">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="side">
+                            <button id="copyhtml" title="Copy" class="localBtn"><i class="fas fa-copy"></i></button>
+                            <button id="undohtml" title="Undo" class="localBtn laterBtn"><i class="fas fa-left-long"></i></button>
+                            <button id="redohtml" title="Redo" class="localBtn laterBtn"><i class="fas fa-right-long"></i></button>
+                            <button id="deletehtml" title="Delete Code" class="localBtn laterBtn"><i class="fas fa-trash"></i></button>
+                            <button id="downloadHtml" class="saveBtn" title="Download as File"><i class="fas fa-download"></i></button>
+                            <button id="uploadHtml" title="Open File" class="localBtn"><i class="fas fa-file-zipper"></i></button>    
+                        </div>
+                    </div>
+                    <textarea id="htmlcode" class="editable" onkeyup="run()"></textarea>
+                </div>
+                <div class="csscode codecontainer">
+                    <div class="codetop">
+                        <div class="logoname">
+                            <i class="fab fa-css3"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="side">
+                            <button id="copycss" title="Copy" class="localBtn"><i class="fas fa-copy"></i></button>
+                            <button id="undocss" title="Undo" class="localBtn laterBtn"><i class="fas fa-left-long"></i></button>
+                            <button id="redocss" title="Redo" class="localBtn laterBtn"><i class="fas fa-right-long"></i></button>
+                            <button id="deletecss" title="Delete Code" class="localBtn laterBtn"><i class="fas fa-trash"></i></button>
+                            <button id="downloadCss" class="saveBtn" title="Download as File"><i class="fas fa-download"></i></button>
+                            <button id="uploadCss" title="Open File" class="localBtn"><i class="fas fa-file-zipper"></i></button>
+                        </div>
+                    </div>
+                    <textarea id="csscode" class="editable" onkeyup="run()"></textarea>
+                </div>
+                <div class="jscode codecontainer">
+                    <div class="codetop">
+                        <div class="logoname">
+                            <i class="fab fa-js-square"></i>
+                            <span>JS</span>
+                        </div>
+                        <div class="side">
+                            <button id="copyjs" title="Copy" class="localBtn"><i class="fas fa-copy"></i></button>
+                            <button id="undojs" title="Undo" class="localBtn laterBtn"><i class="fas fa-left-long"></i></button>
+                            <button id="redojs" title="Redo" class="localBtn laterBtn"><i class="fas fa-right-long"></i></button>
+                            <button id="deletejs" title="Delete Code" class="localBtn laterBtn"><i class="fas fa-trash"></i></button>
+                            <button id="downloadJs" class="saveBtn" title="Download as File"><i class="fas fa-download"></i></button>
+                            <button id="uploadJs" title="Open File" class="localBtn"><i class="fas fa-file-zipper"></i></button>  
+                        </div>
+                    </div>
+                    <textarea id="jscode" class="editable" onkeyup="run()"></textarea>
+                </div>
+            </div>
+            <div id="codeoutputarea">
+                <label>
+                    <div>
+                        <i class="fas fa-play"></i>
+                        <span>Output</span>
+                    </div>
+                    
+                    <button id="saveBtn"><i class="fas fa-download"></i><span>Save</span></button>
+                </label>
+                <iframe id="output"></iframe>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+              <div class="footer-section">
+                <h4>About</h4>
+                <p>Our platform is designed with a focus on simplicity, performance, and developer experience, so you can focus on what matters most: building great web applications and sites.
+                    Whether you’re learning the ropes or an experienced pro, we’re here to help you build, test, and deploy your code faster than ever before.</p>
+              </div>
+          
+              <div class="footer-section lesson">
+                <h4>Don’t know how to code</h4>
+                <a href="../static/files/HTML Lessons.rar" download="HTML_Lessons.rar">HTML PDF's</a>
+                <a href="../static/files/CSS Lessons.zip" download="CSS_Lessons.zip">CSS PDF's</a>
+                <a href="../static/files/Javascript-Cheat-Sheet.pdf" download="Js.pdf">JS PDF</a>
+              </div>
+          
+              <div class="footer-section social">
+                <h4>Social Links</h4>
+                <a href="https://chat.whatsapp.com/Lx0quCm6fEe06phcyA58ke" target="_blank"><i class="fab fa-whatsapp"></i><span>Whatsapp</span></a>
+                <a href="https://t.me/+dRFBkZ_c53UxNmM8" target="_blank"><i class="fab fa-telegram"></i><span>Telegram</span></a>
+                <a href="https://github.com/Caley72/WebDev-Complier" target="_blank"><i class="fab fa-github"></i><span>Github Repository</span></a>
+              </div>
+            </div>
+          </footer>
+        <!--JS files-->          
+        <script defer src="../static/script/script.js"></script>
+        <script defer src="../static/script/files.js"></script>
+    </body>
+</html>
