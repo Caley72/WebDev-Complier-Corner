@@ -11,11 +11,11 @@
         <meta property="og:url" content="https://WebDev-Complier.netlify.app">
         <title>WebDev Complier</title>
         <!--Logo-->
-        <link rel="icon" type="icon/png" href="static/icons/logo.png">
+        <link rel="icon" type="icon/png" href="../static/icons/logo.png">
         <!--Font Awesome-->
-        <link rel="stylesheet" href="assests/style/fontawesome-free-6.4.0-web/css/all.css">
+        <link rel="stylesheet" href="../assests/style/fontawesome-free-6.4.0-web/css/all.css">
         <!--Others-->
-        <link rel="stylesheet" href="assests/style/style.css">
+        <link rel="stylesheet" href="../assests/style/style.css">
     </head>
     <body>
         <!--Loader-->
@@ -48,8 +48,7 @@
                             <div class="logoname" id="jsTop"><i class="fab fa-js-square jscode"></i><span>JS</span></div>
                         </div>
                         <div class="toolbox">
-                            <button class="toolbutton"><i class="fas fa-wrench"></i></button>
-                            <div class="tools">
+                            <div class="toolscontainer">
                                 <div id="htmltools" class="tools">
                                     <button id="copyhtml" title="Copy" class="localBtn"><i class="fas fa-copy"></i></button>
                                     <button id="undohtml" title="Undo" class="localBtn laterBtn"><i class="fas fa-left-long"></i></button>
@@ -77,12 +76,21 @@
                             </div>
                         </div>
                     </section>
-                    <textarea id="htmlcode" class="codes"></textarea>
-                    <textarea id="csscode" class="codes"></textarea>
-                    <textarea id="jscode" class="codes"></textarea>
+                    <textarea id="htmlcode" class="codes" class="editable" onkeyup="run()"></textarea>
+                    <textarea id="csscode" class="codes" class="editable" onkeyup="run()"></textarea>
+                    <textarea id="jscode" class="codes" class="editable" onkeyup="run()"></textarea>
                 </div>
             </div>
-            <div id="codeoutputarea"></div>
+            <div id="codeoutputarea">
+                <div class="label">
+                    <div>
+                        <i class="fas fa-play"></i>
+                        <span>Output</span>
+                    </div>
+                    <button id="saveBtn"><i class="fas fa-download"></i><span>Save</span></button>
+                </div>
+                <iframe id="output"></iframe>
+            </div>
         </section>
         <!--Footer-->
         <footer>
@@ -95,9 +103,9 @@
           
                 <div class="footer-section lesson">
                 <h4>Don’t know how to code</h4>
-                    <a href="static/files/HTML Lessons.rar" download="HTML_Lessons.rar">HTML PDF's</a>
-                    <a href="static/files/CSS Lessons.zip" download="CSS_Lessons.zip">CSS PDF's</a>
-                    <a href="static/files/Javascript-Cheat-Sheet.pdf" download="Js.pdf">JS PDF</a>
+                    <a href="../assests/files/HTML Lessons.rar" download="HTML_Lessons.rar">HTML PDF's</a>
+                    <a href="../assests/files/CSS Lessons.zip" download="CSS_Lessons.zip">CSS PDF's</a>
+                    <a href="../assests/files/Javascript-Cheat-Sheet.pdf" download="Js.pdf">JS PDF</a>
                 </div>
           
                 <div class="footer-section social">
@@ -109,8 +117,8 @@
             </div>
         </footer>
         <!--JS files-->          
-        <script defer src="assests/script/script.js"></script>
-        <script defer src="assests/script/code.js"></script>
-        <script defer src="assests/script/files.js"></script>
+        <script defer src="../assests/script/script.js"></script>
+        <script defer src="../assests/script/code.js"></script>
+        <script defer src="../assests/script/files.js"></script>
     </body>
 </html>

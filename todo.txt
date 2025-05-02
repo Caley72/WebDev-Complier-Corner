@@ -1,0 +1,11 @@
+Upadtes
+_Fix responsive mobile issuse
+_Add themes different themes for text, numbers and symbols
+_Add the send email section
+
+~Just additional Features for later(just me and delusions)
+_Add login and signup (simple username, email and password)
+_Add upload to cloud
+_Add extra page to view other peoples works
+_Add quiz section
+(If the above are done change the name to WEBDEV Complied)
