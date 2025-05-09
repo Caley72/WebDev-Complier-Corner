@@ -315,13 +315,14 @@ nav{
   background-repeat: repeat, no-repeat;
 }
 
-.heading{
+.bento .heading{
   text-transform: uppercase;
   font-size: 20px;
   padding-bottom: 3px;
   width: 100%;
   border-bottom: 3px solid #df4b06;
   letter-spacing: 1.4px;
+  margin-top: 100px;
 }
 
 .tocode{
@@ -860,5 +861,30 @@ footer a:hover {
 
   .codes{
     height: 85%;
+  }
+
+  .hero-section{
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .bento{
+    flex-direction: column;
+    height: 100vh auto;
+    margin-top: 50px;
+
+  }
+
+  .bento .outter, .spilt{
+    width: 90%;
+  }
+
+  .bento .spilt{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .bento .spilt .card{
+    height: 80%;
   }
 }
