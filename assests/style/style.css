@@ -193,12 +193,12 @@ nav{
 }
 
 .bento .outter, .spilt{
-  min-width: 200px;
+  min-width: 400px;
   width: 30%;
-  max-width: 600px;
+  max-width: 500px;
   min-height: 300px;
   height: 40%;
-  max-height: 1200px;
+  max-height: 400px;
 }
 
 .bento .spilt{
@@ -211,17 +211,17 @@ nav{
 
 .bento .spilt .card{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 10px;
   width: 100%;
   height: 50%;
 }
 .card{
+  align-items: center;
   border: 2px solid #ffffffa6;
   border-radius: 10px;
-  padding: 20px;
+  padding: 8px;
   animation-duration: 2s;
   animation-name: shadow;
   animation-timing-function: running;
@@ -310,28 +310,56 @@ nav{
   width: 100%;
   height: 100%;
   background: linear-gradient(#0044ff 4%, #ffffffcc 4%),
-    linear-gradient(to right, #ebf8e100 10%, #df4b06 10% 10.2%, #ebf8e100 10.5%);
+    linear-gradient(to right, #ebf8e100 10%, #e94d05 10% 10.2%, #ebf8e100 10.5%);
   background-size: 100% 25px, 100% 100%;
   background-repeat: repeat, no-repeat;
+  color: #222;
+  font-family: monospace;
+  align-items: flex-start;
+  overflow: hidden;
+
+}
+
+.book h3{
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+.book ul{
+  padding: 0 0 0 50px;
+  text-align: left;
+}
+
+.book ul :nth-child(n){
+  margin-bottom: 10px;
+}
+
+.bento .headText{
+  margin-top: 50px;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 50px;
 }
 
 .bento .heading{
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   padding-bottom: 3px;
   width: 100%;
   border-bottom: 3px solid #df4b06;
-  letter-spacing: 1.4px;
-  margin-top: 100px;
+  letter-spacing: 1px;
+}
+
+.extra .gamer{
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .tocode{
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  width: 100%;
-  gap: 20px;
+  justify-content: center;
 }
 
 .tocode span{
@@ -343,7 +371,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13rem;
+  width: 10rem;
   overflow: hidden;
   height: 3rem;
   background-size: 300% 300%;
@@ -870,7 +898,7 @@ footer a:hover {
 
   .bento{
     flex-direction: column;
-    height: 100vh auto;
+    height: auto;
     margin-top: 50px;
 
   }
