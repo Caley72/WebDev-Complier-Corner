@@ -1,5 +1,4 @@
 Upadtes
-_Fix responsive mobile issuse
 _Add themes different themes for text, numbers and symbols
 _Add the send email section
 
@@ -9,3 +8,12 @@ _Add upload to cloud
 _Add extra page to view other peoples works
 _Add quiz section
 (If the above are done change the name to WEBDEV Complied)
+
+
+-Game section
+(Drop Down)
+    -Puzzle
+    -Number Guess
+    -Infinite Run
+    -Memory Game
+    -Tetris
