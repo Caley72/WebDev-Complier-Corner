@@ -190,3 +190,71 @@ div{
 }
 
 /*Games Dropdown*/
+#gameContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  width: 100vw auto;
+  height: 100vh auto;
+  background-color: #222;
+  padding: 80px 40px 0 40px;
+}
+
+.gameContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  width: 100vw;
+  max-width: 1000px;
+  min-width: 500px;
+  height: 80vh;
+  max-height: 1000px;
+  min-height: 500px;
+  background-color: #222;
+  border: 1px solid #525252b2;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+/**gameDiv**/
+.gameDiv{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  background-color: #222;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  color: #ececec;
+}
+
+.gameDiv:hover{
+  border: 1px solid #666666;
+  transform: scale(1.02) translateY(-2px);
+}
+
+.gameDiv img{
+  width: 60px;
+  border: 0px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.gameDiv span{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.gameDiv span p{
+  font-size: 15px;
+}
